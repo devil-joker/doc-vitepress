@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "allowJs": true,
+    "isolatedModules": true,
+    "noUnusedLocals": true,
+    "baseUrl": ".",
+    "types": ["vitepress", "node"],
+    "lib": ["dom", "dom.iterable", "ScriptHost", "ES2015", "esnext"],
+    "outDir": "./release"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "release"],
+  "vueCompilerOptions": {
+    "target": 3
+  }
+}
